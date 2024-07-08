@@ -1,25 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Weather Application
 
-## Getting Started
+## Project Description
 
-You will need an OpenWeatherMap API key to fetch the weather data. This can be obtained for free from their website https://openweathermap.org. After obtaining your API key, copy it and create a new .env.local file in the projects root directory. 
+This is a weather application built with Next.js that allows users to search for weather information by city name or use their current location. The application fetches weather data from the OpenWeatherMap API.
 
-Then add the line NEXT_PUBLIC_WEATHER_KEY=apikey replacing "apikey" with the key you just copied earlier. It may take up to 15mins~ before a fresh api key works, so if you are getting 404 errors at first just wait a little while and try again.
+## Features
 
-First, make sure to install dependencies:
+- City-based weather search
+- Geolocation support for current location weather
+- Responsive design using TailwindCSS
+
+## Technologies Used
+
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [OpenWeatherMap API](https://openweathermap.org/api)
+
+## Setup and Installation
+
+### Prerequisites
+
+- Node.js
+- npm (Node Package Manager)
+- OpenWeatherMap API key
+
+### API Key Setup
+
+1. Obtain a free API key from [OpenWeatherMap](https://openweathermap.org/).
+2. Create a `.env.local` file in the project's root directory.
+3. Add the following line to the file:
+   `NEXT_PUBLIC_WEATHER_KEY=your_api_key_here`
+
+Replace `your_api_key_here` with your actual API key.
+
+Note: It may take up to 15 minutes for a new API key to become active.
+
+### Installation
+
+1. Clone the repository:
 
 ```bash
-npm run install
+git clone git@github.com:nikitao13/weather-dashboard.git
+cd weather-dashboard
 ```
 
-Then, start the dev environment:
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open http://localhost:3000 in your browser to view the application.
 
-Users can use the searchbar to find their city, or click on the location icon to use local geolocation data from the browser. 
+### Usage
 
-This project was made as part of a course from myFreeCodeCamp teaching Nextjs, TypeScript, React, and TailwindCSS.
+Use the search bar to find weather information for a specific city.
+Click on the location icon to use your browser's geolocation data for local weather information.
+
+### Project Origin
+
+This project was developed as part of a course from freeCodeCamp, focusing on Next.js, TypeScript, React, and TailwindCSS.
+
+### Notes
+
+If you encounter 404 errors immediately after setting up a new API key, wait for about 15 minutes and try again.
+Ensure your browser allows location access if you want to use the geolocation feature.
